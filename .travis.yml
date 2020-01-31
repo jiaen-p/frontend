@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-    - docker run jiaenpan/frontend npm run test -- --coverage
+    - docker run -e CI=true jiaenpan/frontend npm run test -- --coverage
